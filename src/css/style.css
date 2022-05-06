@@ -1,17 +1,4 @@
-/* Error: semicolons aren't allowed in the indented syntax.
- *   ,
- * 4 | @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
- *   |                                                                                                   ^
- *   '
- *   src\sass\styles.sass 4:99  root stylesheet */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: semicolons aren't allowed in the indented syntax.\a   \2577 \a 4 \2502  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');\d\a   \2502                                                                                                    ^\a   \2575 \a   src\\sass\\styles.sass 4:99  root stylesheet";
-}
+/*# sourceMappingURL=style.css.map */
