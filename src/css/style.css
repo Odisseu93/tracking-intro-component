@@ -1,12 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
-:root {
+body {
   font-family: "Barlow", sans-serif;
   font-size: 18px;
   padding: 0;
   margin: 0;
   background: hsl(207deg, 33%, 95%);
   box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hdr {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  padding: 30px 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hdr-nav {
+  display: none;
+}
+.hdr-button {
+  border: none;
+}
+
+.main {
+  box-sizing: border-box;
+  background: hsl(207deg, 33%, 95%);
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.main img {
+  display: none;
+}
+
+.container-h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: hsl(230deg, 29%, 20%);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */

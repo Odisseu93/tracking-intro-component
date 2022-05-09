@@ -2,5 +2,42 @@
 @use 'mixins'
 
 
-@include mixins.css-reset()
-  
+
+
+
+body
+  @include mixins.css-reset()  
+  // background: tomato
+  width: 100vw
+  height: 100vh
+
+.hdr
+  box-sizing: border-box
+  width: 100%
+  display: flex
+  padding: 30px 30px
+  justify-content: space-between
+  flex-wrap: wrap  
+  &-nav
+    display: none
+  &-button
+   border: none   
+
+.main
+    box-sizing: border-box
+    background: variables.$light-grayish-blue
+    width: 100%
+    padding: 30px
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    img
+      display: none
+
+.container
+  &-h1
+    font-family: variables.$font-heading-callToAction-navigation
+    color: variables.$very-dark-blue
+    font-weight: 700
+    text-transform: uppercase
+
