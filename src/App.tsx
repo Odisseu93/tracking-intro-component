@@ -22,7 +22,9 @@ function App() {
       </header>
 
       <main className='main'>
-        <img src={devices} />
+        <div className="image-box">
+          <img src={devices} />
+        </div>
         <div className="container">
 
           <p className='container-p1'>

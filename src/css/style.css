@@ -35,8 +35,16 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.main img {
-  display: none;
+
+.image-box {
+  margin: 0 -25px;
+  width: 370px;
+  height: 464px;
+  overflow: hidden;
+}
+.image-box img {
+  padding: 0;
+  width: 505px;
 }
 
 .container-p1 {
