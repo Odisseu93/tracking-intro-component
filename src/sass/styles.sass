@@ -1,12 +1,8 @@
 @use 'variables'
 @use 'mixins'
 
-
-
-
-
 body
-  @include mixins.css-reset()  
+  @include mixins.css-reset()
   // background: tomato
   width: 100vw
   height: 100vh
@@ -17,27 +13,71 @@ body
   display: flex
   padding: 30px 30px
   justify-content: space-between
-  flex-wrap: wrap  
+  flex-wrap: wrap
+  
   &-nav
     display: none
+  
   &-button
-   border: none   
+    border: none
 
 .main
-    box-sizing: border-box
-    background: variables.$light-grayish-blue
-    width: 100%
-    padding: 30px
-    display: flex
-    flex-direction: column
-    flex-wrap: wrap
-    img
-      display: none
+  box-sizing: border-box
+  background: variables.$light-grayish-blue
+  width: 100%
+  padding: 30px
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  img
+    display: none
 
 .container
+  
+  &-p1
+    @include mixins.font-color-and-width($w: 100%, $c: variables.$grayish-blue )
+    text-transform: uppercase
+    font-size: 14px
+    // border-bottom: 1px solid tomato
+    margin-bottom: -10px
+    word-spacing: 0.2em
+    letter-spacing: 0.15em
+  
+    &-span
+      @include mixins.font-color-and-width($w: 3.5em, $c: variables.$light-grayish-blue)
+      box-sizing: border-box
+      margin-right: 5px
+      padding: 5px
+      text-align: center
+      align-items: center
+      font-weight: bold
+      display: inline-block
+      background: variables.$very-dark-blue
+      border-radius: 20px  
+  
   &-h1
+    @include mixins.font-color-and-width($w: 90%, $c: variables.$very-dark-blue )
     font-family: variables.$font-heading-callToAction-navigation
-    color: variables.$very-dark-blue
     font-weight: 700
     text-transform: uppercase
-
+    
+  
+  &-p2
+    @include mixins.font-color-and-width($w:90%, $c: variables.$dark-grayish-blue)
+    margin-top: -10px
+  
+  &-p3
+    @include mixins.font-color-and-width($w:80%, $c: variables.$grayish-blue)
+    text-transform: uppercase
+    font-size: 14px
+    // text-transform:
+   
+    &-button
+     @include mixins.font-color-and-width($w: 150px, $c: variables.$light-grayish-blue)
+     height: 3em
+     margin-right: 10px
+     text-transform: uppercase
+     font-weight: bold
+     border: none
+     border-radius: 5px  
+     background: variables.$Red
