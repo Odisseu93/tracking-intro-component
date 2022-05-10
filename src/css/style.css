@@ -19,6 +19,9 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.hdr-logo {
+  width: 1.5em;
+}
 .hdr-nav {
   display: none;
 }
