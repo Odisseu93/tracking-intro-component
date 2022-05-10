@@ -37,8 +37,8 @@ body {
 }
 
 .image-box {
-  margin: 0 -25px;
-  width: 370px;
+  margin: 0 -1.3888em;
+  width: 20.55em;
   height: 464px;
   overflow: hidden;
 }
@@ -47,6 +47,9 @@ body {
   width: 505px;
 }
 
+.container {
+  margin-top: -7em;
+}
 .container-p1 {
   width: 100%;
   color: hsl(231deg, 7%, 65%);
@@ -82,7 +85,7 @@ body {
   margin-top: -10px;
 }
 .container-p3 {
-  width: 80%;
+  width: 100%;
   color: hsl(231deg, 7%, 65%);
   text-transform: uppercase;
   font-size: 14px;
@@ -97,6 +100,9 @@ body {
   border: none;
   border-radius: 5px;
   background: hsl(0deg, 100%, 68%);
+}
+.container-p3 p {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

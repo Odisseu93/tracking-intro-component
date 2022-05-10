@@ -35,9 +35,10 @@ function App() {
 
           <p className='container-p2'>Project planning and time tracking for agile teams</p>
 
-          <p className='container-p3'>
+          <div className='container-p3'>
             <button className='container-p3-button'>Schedule a demo</button>
-            to see a live preview</p>
+            <p>to see a live preview</p>
+          </div>
 
         </div>
       </main>
