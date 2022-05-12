@@ -11,10 +11,10 @@ const showNav = () => {
 
   if (nav.style.display === 'none') {
     nav.style.display = 'block';
-    imgHdr.src = hamburger
+    imgHdr.src = close
   } else {
     nav.style.display = 'none'
-    imgHdr.src = close
+    imgHdr.src = hamburger
   }
 }
 
