@@ -27,6 +27,11 @@ Meu desafio é construir esta página ([desafio](https://www.frontendmentor.io/c
 - Mobile-first workflow
 
 ## Em construção 👷...
+
+### O que foi feito 
+
+- Estilização de telas para dispositivos mobile (telas apartir de 375px)
+
 <!-- ### O que foi feito 
 - Organização dos arquivos em pasta
 - Implementação da promise Axios no projeto 
