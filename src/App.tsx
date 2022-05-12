@@ -1,7 +1,22 @@
 import React from 'react';
 import logo from './images/logo.svg'
 import hamburger from './images/icon-hamburger.svg'
+import close from './images/icon-close.svg'
 import devices from './images/illustration-devices.svg'
+
+//show or hide the navigation menu
+const showNav = () => {
+  const nav = document.querySelector('#hdr_nav') as HTMLElement;
+  const imgHdr = document.querySelector('#hdr_button_img') as HTMLImageElement;
+
+  if (nav.style.display === 'none') {
+    nav.style.display = 'block';
+    imgHdr.src = hamburger
+  } else {
+    nav.style.display = 'none'
+    imgHdr.src = close
+  }
+}
 
 function App() {
   return (
@@ -9,11 +24,11 @@ function App() {
 
       <header className='hdr'>
         <img src={logo} alt="logo" className='hdr-logo' />
-        <button className='hdr-button'>
-          <img src={hamburger} />
-        </button>
+        <button onClick={showNav} className='hdr-button' id='hdr_button' >
+          <img className='hdr-button-img' id='hdr_button_img' src={hamburger} />
+          ;        </button>
 
-        <nav className='hdr-nav'>
+        <nav className='hdr-nav' id='hdr_nav'>
           <a href='#' className='hdr-nav-a'>Product</a>
           <a href='#' className='hdr-nav-a'>Features</a>
           <a href='#' className='hdr-nav-a'>Pricing</a>
