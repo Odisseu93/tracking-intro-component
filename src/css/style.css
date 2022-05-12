@@ -23,7 +23,14 @@ body {
   width: 1.5em;
 }
 .hdr-nav {
+  position: fixed;
+  top: 5em;
+  right: 2.5em;
+  left: 3.5em;
   display: none;
+  width: 15em;
+  height: 15em;
+  border: 1px solid tomato;
 }
 .hdr-button {
   border: none;
