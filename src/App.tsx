@@ -12,9 +12,11 @@ const showNav = () => {
   if (nav.style.display === 'none') {
     nav.style.display = 'block'
     imgHdr.src = close
+    nav.classList.toggle("hdr-nav")
   } else {
     nav.style.display = 'none'
     imgHdr.src = hamburger
+    nav.classList.toggle("hdr-nav")
   }
 }
 
@@ -29,10 +31,10 @@ function App() {
           </button>
 
         <nav className='hdr-nav' id='hdr_nav'>
-          <a href='#' className='hdr-nav-a'>Product</a>
-          <a href='#' className='hdr-nav-a'>Features</a>
-          <a href='#' className='hdr-nav-a'>Pricing</a>
-          <a href='#' className='hdr-nav-a'>Login</a>
+          <a href='#' className='hdr-nav-a'><h4>Product</h4></a>
+          <a href='#' className='hdr-nav-a'><h4>Features</h4></a>
+          <a href='#' className='hdr-nav-a'><h4>Pricing</h4></a>
+          <a href='#' className='hdr-nav-a'><h4>Login</h4></a>
         </nav>
       </header>
 
