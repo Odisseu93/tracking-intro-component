@@ -1,9 +1,10 @@
 @use 'variables'
 @use 'mixins'
 
+
+//375px screens
 body
   @include mixins.css-reset()
-  // background: tomato
   width: 100vw
   height: 100vh
 
@@ -19,18 +20,39 @@ body
     width: 1.5em
 
   &-nav
-    position: fixed
-    top: 5em
+    display: none
+    box-sizing: border-box
+    flex-direction: column
+    background: variables.$light-grayish-blue
+    align-items: center
+    position: absolute
+    top: 6.5em
     right: 2.5em
     left: 3.5em
-    display: none
     width: 15em
-    height: 15em
-    border: 1px solid tomato
+    height: 12em
+    box-shadow: -9px 11px 10px -11px variables.$dark-grayish-blue
+  & a
+    margin: 0
+    width: 100%
+    margin: px
+    width: 50%
+    font-family: variables.$font-heading-callToAction-navigation    
+    text-align: center
+    text-decoration: none  
+    text-transform: uppercase
+    font-size: 1.1em
+    font-weight: 700
+    color: variables.$very-dark-blue
+
+    &:last-child
+      color: variables.$grayish-blue  
 
   
   &-button
     border: none
+    &:hover
+      opacity: 80%
 
 .main
   box-sizing: border-box
@@ -42,7 +64,6 @@ body
   flex-wrap: wrap
 
 .image-box
-  // display: none
   margin: 0 -1.3888em
   width: 20.55em
   height: 464px
@@ -59,7 +80,6 @@ body
     @include mixins.font-color-and-width($w: 100%, $c: variables.$grayish-blue )
     text-transform: uppercase
     font-size: 14px
-    // border-bottom: 1px solid tomato
     margin-bottom: -10px
     word-spacing: 0.2em
     letter-spacing: 0.15em
@@ -102,6 +122,8 @@ body
      border: none
      border-radius: 5px  
      background: variables.$Red
+     &:hover
+      opacity: 80%
 
     & p
       display: inline-block
