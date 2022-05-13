@@ -4,6 +4,8 @@ import hamburger from './images/icon-hamburger.svg'
 import close from './images/icon-close.svg'
 import devices from './images/illustration-devices.svg'
 
+
+
 //show or hide the navigation menu
 const showNav = () => {
   const nav = document.querySelector('#hdr_nav') as HTMLElement;
@@ -12,11 +14,11 @@ const showNav = () => {
   if (nav.style.display === 'none') {
     nav.style.display = 'block'
     imgHdr.src = close
-    nav.classList.toggle("hdr-nav")
+    // nav.classList.toggle("hdr-nav")
   } else {
     nav.style.display = 'none'
     imgHdr.src = hamburger
-    nav.classList.toggle("hdr-nav")
+    // nav.classList.toggle("hdr-nav")
   }
 }
 
