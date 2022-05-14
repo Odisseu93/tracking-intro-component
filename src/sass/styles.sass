@@ -21,32 +21,43 @@ body
 
   &-nav
     display: none
+    // border: 0.1px solid #ccc
     box-sizing: border-box
-    flex-direction: column
     background: variables.$light-grayish-blue
-    align-items: center
     position: absolute
-    top: 6.5em
-    right: 2.5em
-    left: 3.5em
-    width: 15em
-    height: 12em
-    box-shadow: -9px 11px 10px -11px variables.$dark-grayish-blue
+    // top: 6.5em
+    top: 7.31rem
+    // right: 2.5em
+    right: 2,.81rem
+    // left: 3.5em
+    left: 3.93rem
+    // width: 15em
+    width: 16.88rem
+    // height: 12em
+    height: 13.5rem
+    // box-shadow: -9px 11px 10px -11px  variables.$dark-grayish-blue
+    box-shadow: 9px 10px 8px -10px variables.$dark-grayish-blue
   & a
     margin: 0
     width: 100%
-    margin: px
-    width: 50%
     font-family: variables.$font-heading-callToAction-navigation    
     text-align: center
+    height: 0
     text-decoration: none  
     text-transform: uppercase
-    font-size: 1.1em
+    font-size: 1em
     font-weight: 700
     color: variables.$very-dark-blue
-
+    & h4  
+     border: none
+     margin: 1.2em auto
     &:last-child
-      color: variables.$grayish-blue  
+      width: 80%
+      margin: 0.8em auto
+      display: flex
+      color: variables.$grayish-blue 
+      border-top: 1px solid #ccc
+      flex-shrink: 3
 
   
   &-button
@@ -87,7 +98,7 @@ body
     &-span
       @include mixins.font-color-and-width($w: 3.5em, $c: variables.$light-grayish-blue)
       box-sizing: border-box
-      margin-right: 5px
+      margin-right: 1rem
       padding: 5px
       text-align: center
       align-items: center
@@ -115,9 +126,14 @@ body
    
     &-button
      @include mixins.font-color-and-width($w: 150px, $c: variables.$light-grayish-blue)
+     font-family: variables.$font-heading-callToAction-navigation    
      height: 3em
+     word-spacing: 0.1em
+     letter-spacing: 0.1em 
      margin-right: 10px
      text-transform: uppercase
+     padding: 10px
+     font-size: 1em
      font-weight: bold
      border: none
      border-radius: 5px  

@@ -25,32 +25,38 @@ body {
 .hdr-nav {
   display: none;
   box-sizing: border-box;
-  flex-direction: column;
   background: hsl(207deg, 33%, 95%);
-  align-items: center;
   position: absolute;
-  top: 6.5em;
-  right: 2.5em;
-  left: 3.5em;
-  width: 15em;
-  height: 12em;
-  box-shadow: -9px 11px 10px -11px hsl(230deg, 11%, 40%);
+  top: 7.31rem;
+  right: 2, 0.81rem;
+  left: 3.93rem;
+  width: 16.88rem;
+  height: 13.5rem;
+  box-shadow: 9px 10px 8px -10px hsl(230deg, 11%, 40%);
 }
 .hdr a {
   margin: 0;
   width: 100%;
-  margin: px;
-  width: 50%;
   font-family: "Barlow Condensed", sans-serif;
   text-align: center;
+  height: 0;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 700;
   color: hsl(230deg, 29%, 20%);
 }
+.hdr a h4 {
+  border: none;
+  margin: 1.2em auto;
+}
 .hdr a:last-child {
+  width: 80%;
+  margin: 0.8em auto;
+  display: flex;
   color: hsl(231deg, 7%, 65%);
+  border-top: 1px solid #ccc;
+  flex-shrink: 3;
 }
 .hdr-button {
   border: none;
@@ -96,7 +102,7 @@ body {
   width: 3.5em;
   color: hsl(207deg, 33%, 95%);
   box-sizing: border-box;
-  margin-right: 5px;
+  margin-right: 1rem;
   padding: 5px;
   text-align: center;
   align-items: center;
@@ -126,9 +132,14 @@ body {
 .container-p3-button {
   width: 150px;
   color: hsl(207deg, 33%, 95%);
+  font-family: "Barlow Condensed", sans-serif;
   height: 3em;
+  word-spacing: 0.1em;
+  letter-spacing: 0.1em;
   margin-right: 10px;
   text-transform: uppercase;
+  padding: 10px;
+  font-size: 1em;
   font-weight: bold;
   border: none;
   border-radius: 5px;
