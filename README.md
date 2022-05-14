@@ -31,6 +31,7 @@ Meu desafio é construir esta página ([desafio](https://www.frontendmentor.io/c
 ### O que foi feito 
 
 - Estilização de telas para dispositivos mobile (telas apartir de 375px)
+- [Deploy](https://tracking-intro-component-wheat.vercel.app/)
 
 <!-- ### O que foi feito 
 - Organização dos arquivos em pasta
