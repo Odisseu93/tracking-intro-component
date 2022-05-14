@@ -152,4 +152,31 @@ body {
   display: inline-block;
 }
 
+@media (width <= 320px) {
+  .hdr {
+    width: 100%;
+  }
+  .hdr-nav {
+    top: 6.31rem;
+    left: 1.93rem;
+  }
+
+  .image-box {
+    margin: 0 -1.3888em;
+    width: 17.55em;
+    height: 464px;
+    overflow: hidden;
+  }
+
+  .container-p1-span {
+    margin-right: 0.9em;
+  }
+  .container-p3-button {
+    padding-bottom: 40px;
+    font-size: 1em;
+    width: 40%;
+    margin-right: 0.5em;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
