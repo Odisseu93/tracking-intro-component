@@ -1,4 +1,4 @@
-# Advice generator app
+# tracking-intro-component
 
 ![Design preview for the Advice generator app coding challenge](./src/design/desktop-preview.jpg)
 
