@@ -11,13 +11,13 @@ const showNav = () => {
   const nav = document.querySelector('#hdr_nav') as HTMLElement;
   const imgHdr = document.querySelector('#hdr_button_img') as HTMLImageElement;
 
-  if (nav.style.display === 'none') {
+  if (nav.style.display === 'none' || nav.style.display === '') {
     nav.style.display = 'block'
     imgHdr.src = close
     // nav.classList.toggle("hdr-nav")
   } else {
-    nav.style.display = 'none'
     imgHdr.src = hamburger
+    nav.style.display = 'none'
     // nav.classList.toggle("hdr-nav")
   }
 }
@@ -30,7 +30,7 @@ function App() {
         <img src={logo} alt="logo" className='hdr-logo' />
         <button onClick={showNav} className='hdr-button' id='hdr_button' >
           <img className='hdr-button-img' id='hdr_button_img' src={hamburger} />
-          </button>
+        </button>
 
         <nav className='hdr-nav' id='hdr_nav'>
           <a href='#' className='hdr-nav-a'><h4>Product</h4></a>
