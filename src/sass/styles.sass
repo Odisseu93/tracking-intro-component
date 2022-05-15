@@ -144,7 +144,23 @@ body
     & p
       display: inline-block
 
-//375px screens
+.footer
+  padding: 0 35px
+  box-sizing: border-box
+  display: flex
+  flex-flow: column wrap
+  justify-content: center
+  align-items: center
+  @include mixins.font-color-and-width($w:100%, $c: variables.$dark-grayish-blue)
+  // margin-top: -10px
+  // background: tomato
+  & p
+    font-size: 0.8em
+    & a
+      text-decoration: none
+      width:50%
+
+//320px screens
 
 @media (width <= 320px)
 

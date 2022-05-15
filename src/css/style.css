@@ -152,6 +152,24 @@ body {
   display: inline-block;
 }
 
+.footer {
+  padding: 0 35px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: hsl(230deg, 11%, 40%);
+}
+.footer p {
+  font-size: 0.8em;
+}
+.footer p a {
+  text-decoration: none;
+  width: 50%;
+}
+
 @media (width <= 320px) {
   .hdr {
     width: 100%;
