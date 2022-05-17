@@ -33,6 +33,7 @@ Meu desafio é construir esta página ([desafio](https://www.frontendmentor.io/c
 - Estilização de telas para dispositivos mobile (telas de 320px)
 - Estilização de telas para dispositivos mobile (telas de 375px)
 - Estilização de telas para dispositivos mobile (telas de acima de 375px até 768 px)
+- Estilização para telas de 1440px.
 - [Deploy](https://tracking-intro-component-wheat.vercel.app/)
 
 <!-- ### O que foi feito 
