@@ -21,21 +21,14 @@ body
 
   &-nav
     display: none
-    // border: 0.1px solid #ccc
     box-sizing: border-box
     background: variables.$light-grayish-blue
     position: absolute
-    // top: 6.5em
     top: 7.31rem
-    // right: 2.5em
     right: 2,.81rem
-    // left: 3.5em
     left: 3.93rem
-    // width: 15em
     width: 16.88rem
-    // height: 12em
     height: 13.5rem
-    // box-shadow: -9px 11px 10px -11px  variables.$dark-grayish-blue
     box-shadow: 9px 10px 8px -10px variables.$dark-grayish-blue
   & a
     margin: 0
@@ -122,7 +115,6 @@ body
     @include mixins.font-color-and-width($w:100%, $c: variables.$grayish-blue)
     text-transform: uppercase
     font-size: 14px
-    // text-transform:
    
     &-button
      @include mixins.font-color-and-width($w: 150px, $c: variables.$light-grayish-blue)
@@ -152,8 +144,6 @@ body
   justify-content: center
   align-items: center
   @include mixins.font-color-and-width($w:100%, $c: variables.$dark-grayish-blue)
-  // margin-top: -10px
-  // background: tomato
   & p
     font-size: 0.8em
     & a
@@ -187,6 +177,7 @@ body
         width: 40%  
         margin-right: 0.5em
 
+//above 375px
 @media (width > 375px) and (width < 768px)
   .hdr
     box-sizing: border-box
@@ -210,3 +201,72 @@ body
     overflow: hidden
     & img
      padding: 0
+
+//desktop  
+@media (min-width: 1440px)
+  .hdr
+    &-logo
+      margin-left: 4.7em
+      height: 1.5em
+    &-button
+      display: none
+    &-nav
+      display: flex
+      position: static
+      height: auto
+      width: auto
+      margin: 0
+      padding: 0
+      box-shadow: none
+      & a
+        font-size: 1.5em
+        padding-right: 2em
+        &:hover
+          text-decoration: underline
+        &:last-child
+         width: 100px 
+         height: auto
+         display: flex 
+         align-items: center
+         justify-content: center
+         padding-right: 10em
+         margin: 0 
+         border: none
+         &::before
+            position: relative
+            top: -0.7rem
+            padding-right: 3rem
+            opacity: 50%
+            content: '.'
+            color: variables.$grayish-blue
+            font-size: 2em
+
+  .main
+    margin: 0
+    padding: 0
+    display: grid 
+    grid-auto-flow: column
+    grid-template-columns: 1fr 1fr
+    align-items: center
+  .container
+    margin: 0
+    margin-left: 6em
+    grid-column: 1
+    align-content: center
+    &-h1
+      font-size: 3em
+      width: 70%
+    & p
+      font-size: 1em
+    & button:hover
+      cursor: pointer
+      
+  .image-box  
+    margin: 0
+    padding: 0
+    height: auto
+    width:100%
+    grid-column: 2
+    & img
+      width: 69vw
+        
