@@ -196,11 +196,11 @@ body {
     margin-right: 0.5em;
   }
 }
-@media (width > 375px) and (width < 768px) {
+@media (width > 375px) and (width < 1200px) {
   .hdr {
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 549px;
+    max-width: 600px;
   }
   .hdr-nav {
     top: 15%;
@@ -210,7 +210,7 @@ body {
 
   .main {
     margin: 0 auto;
-    max-width: 549px;
+    max-width: 600px;
     padding: 0 0 0 1em;
   }
 
@@ -225,7 +225,7 @@ body {
     padding: 0;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .hdr-logo {
     margin-left: 4.7em;
     height: 1.5em;
